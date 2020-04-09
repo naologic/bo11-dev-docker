@@ -30,3 +30,8 @@ jobs:
         uses: actions-hub/docker@master
         with:
           args: push ${GITHUB_REPOSITORY}:${IMAGE_TAG}
+      - name: Push to docker registry as :latest
+        if: success()
+        uses: actions-hub/docker@master
+        with:
+          args: push ${GITHUB_REPOSITORY}:${IMAGE_TAG}
