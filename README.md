@@ -4,6 +4,8 @@ Docker image for Angular CLI to use as build container.
 
 Image on dockerhub:
 
+![Docker stats](https://dockeri.co/image/naologic/bo11-dev-docker)
+
 Currently this image uses node 12 (npm 6) and node:lts-slim as base distribution.
 
 The AngularCLI analytics feature is disabled by default to avoid problems in CI environments.
